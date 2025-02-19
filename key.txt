@@ -1,2 +1,0 @@
-AIzaSyAy_hqapYwf5RNEO-xwuLdOvphVzTAzSSA      - Maps JavaScript API
-Geocoding API: 
