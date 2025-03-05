@@ -17,5 +17,11 @@ The **Door Knock Route Optimizer** is a Python-based tool that helps real estate
 - **Marking Excluded Areas:** Cemeteries and railway zones are visually highlighted on the map.
 - **Optimized Route Display:** Generates a mapped route that avoids unnecessary regions while maximizing efficiency.
 
-## 📂 **Project Structure**
-📁 door-knock-route-optimizer │── README.md # Documentation (this file) │── addresses.csv # List of addresses in CSV format │── addresses.txt # Alternative list of addresses │── readAddress.py # Python script for processing and optimizing routes │── map_visualization.py # Generates and displays the optimized map │── route_optimizer.py # Core logic for route calculation │── config.json # Configurable parameters (e.g., excluded areas)
+## 📂 Project Structure
+- **README.md** - Documentation (this file)
+- **addresses.csv** - List of addresses in CSV format
+- **addresses.txt** - Alternative list of addresses
+- **readAddress.py** - Python script for processing and optimizing routes
+- **map_visualization.py** - Generates and displays the optimized map
+- **route_optimizer.py** - Core logic for route calculation
+- **config.json** - Configurable parameters (e.g., excluded areas)
