@@ -9,15 +9,11 @@ from streamlit_folium import folium_static
 from shapely.geometry import Polygon, Point
 import toml
 
-
-# Debugging: Print loaded secrets
-st.write("Secrets Loaded: ", st.secrets)
-
-# Load API Key from Streamlit Secrets Manager
-API_KEY = st.secrets.get("API_KEY", "MISSING_API_KEY")
-
-# Debugging: Check if API key is retrieved
-st.write("API Key Used: ", API_KEY)
+# Load API Key from Streamlit Secrets
+if "API_KEY" in st.secrets:
+    API_KEY = st.secrets["API_KEY"]
+else:
+    st.error("⚠️ API Key not found! Make sure it's in `~/.streamlit/secrets.toml`")
 # Step 2: Convert Address to Coordinates
 def get_coordinates(address):
     url = f'https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={API_KEY}'
