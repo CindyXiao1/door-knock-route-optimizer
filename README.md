@@ -32,8 +32,6 @@ The **Door Knock Route Optimizer** is a **Python-based Streamlit web app** that 
 - **addresses.csv** - List of addresses in CSV format
 - **addresses.txt** - Alternative list of addresses
 - **readAddress.py** - Python script for processing and optimizing routes
-- **map_visualization.py** - Generates and displays the optimized map
-- **route_optimizer.py** - Core logic for route calculation
 - **config.json** - Configurable parameters (e.g., excluded areas)
 
 
